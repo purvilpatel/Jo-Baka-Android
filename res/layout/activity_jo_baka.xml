@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#235578"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".JoBaka" >
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="850dp"
+        android:layout_height="850dp"
+        android:layout_gravity="center"
+        android:maxHeight="850dp"
+        android:maxWidth="850dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/impress_kar" />
+
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3.0" >
+
+        <Button
+            android:id="@+id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:layout_weight="1.0"
+            android:background="#08B7CA"
+            android:text="Customize"
+            android:textColor="#eeeeee" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:layout_weight="1.0"
+            android:background="#08B7CA"
+            android:text="Share"
+            android:textColor="#eeeeee" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:layout_weight="1.0"
+            android:background="#08B7CA"
+            android:text="Save"
+            android:textColor="#eeeeee" />
+
+        <Button
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:layout_weight="1.0"
+            android:background="#08B7CA"
+            android:text="Ad"
+            android:textColor="#eeeeee" />
+    </LinearLayout>
+
+    <com.inmobi.monetization.IMBanner
+        android:id="@+id/banner"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        adSize="15"
+        appId="a6366895d005429d91e98743a027b747" />
+
+</LinearLayout>
